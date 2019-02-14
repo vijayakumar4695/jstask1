@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+	#name {
+
+		width:230px;
+		height: 30px;
+		border-radius: 20px;
+		border-color: black;
+		text-align:center; 
+
+	}
+   #age {
+        margin-left: 10px;
+		width:230px;
+		height: 30px;
+		border-radius: 20px;
+		border-color: black;
+		text-align:center; 
+	
+   }
+#Ugmark {
+
+		width:230px;
+		height: 30px;
+		border-radius: 20px;
+		border-color: black;
+		text-align:center; 
+	
+}
+#Pgmark {
+
+		width:230px;
+		height: 30px;
+		border-radius: 20px;
+		border-color: black;
+		text-align:center; 
+	
+}
+
+#address1{
+
+		width:280px;
+		height: 80px;
+		border-color: purple;
+		
+
+}
+
+#address2{
+
+		width:280px;
+		height: 80px;
+		border-color: purple;
+}
+	
+.container button {
+	width:120px;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+	<body>
+
+		<div class="container-fluid bg-primary">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+		<h1> MY PROFILE </h1>
+	</div>
+</div>
+</div>
+		
+		
+
+    <div class="container bg-warning">
+    	<div class="row">
+    		<div class="col-lg-12 col-md-12 col-sm-12  text-center" style="font-size: 20px">
+</div>
+</div>
+</div>
+<form >
+	<div class="container bg-warning" style="font-size: 16px;">
+		<div class="row">
+	<div class="col-lg-12 col-md-12 col-sm-12 text-center">
+		<br>
+    Name:<input type="text"  id="name" name="Name">
+</div>
+    
+
+    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+    	<br>
+    Age:<input type="text" id="age" name="Age" >
+</div>
+    <br>
+    <div class="container">
+    	<div class="row">
+    		<div class="col-lg-12 col-md-12 col-sm-12">
+    			<br>
+    			<p style="margin-left: 430px;">college :</p>
+    			<p style="margin-left: 460px; color:blue;">PG:</p>
+    		</div>
+    	</div>
+    </div>
+    
+   <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+   	<br>
+    Ugmark:<input type="text" id="Ugmark" name="Ugmark">
+</div>
+    
+    
+    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+    	<br>
+      Address1:<input type="text" id="address1" name="address1">
+  </div>
+  <br>
+  <div class="container">
+    	<div class="row">
+    		<div class="col-lg-12 col-md-12 col-sm-12">
+    			<br>
+    			
+    			<p style="margin-left: 460px; color:blue;">UG:</p>
+    		</div>
+    	</div>
+    </div>
+     
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+      	<br>
+      Pgmark:<input type="text" id="Pgmark" name="Pgmark">
+  </div>
+      
+ 
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+      	<br>
+      Address2:<input type="text" id="address2" name="address2">
+  </div>
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+      	<br>
+      <button type="button"  class="btn btn-success" onclick="myFunction()">submit</button>
+</div>
+</div>
+</div>
+</form>
+
+
+		<script>
+     var name;
+     var age;
+     
+     
+      function  myFunction() {
+       name = document.getElementById("name").value;
+       age =  document.getElementById("age").value;
+     Ugmark = document.getElementById("Ugmark").value;
+       address1= document.getElementById("address1").value;
+      Pgmark =document.getElementById("Pgmark").value;
+       address2=document.getElementById("address2").value;
+         var details = {
+                   	name:name,
+     	            age:age,
+     	            collage:{
+     	            	Ug:{
+     	            		Ugmark:Ugmark,
+     	            		address1:address1,
+     	            	},
+                      Pg:{
+                      	Pgmark:Pgmark,
+                      	address2:address2,
+                      }
+
+
+
+     	            }
+     }
+   console.log(name,age,Ugmark,address1,Pgmark,address2)
+   console.log(details)
+   }
+
+
+
+		</script>
+
+
+</body>
+</html>		
